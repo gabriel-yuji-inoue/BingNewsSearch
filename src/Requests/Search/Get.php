@@ -79,7 +79,7 @@ class Get extends Requests\Request
             'safeSearch' => $this->safeSearch,
             'since' => $this->since,
             'sortBy' => $this->sortBy,
-            'q' => $this->q,
+            'query' => $this->q,
             'quantity' => $this->quantity,
             'news' => $this->news,
         ];
@@ -92,8 +92,34 @@ class Get extends Requests\Request
         }
         return $this;
     }
+
+    public function getQ(): string
+    {
+        return $this->q;
+    }
+
+    public function getSafeSearch(): Enum\SafeSearch
+    {
+        return $this->safeSearch;
+    }
+
+    public function getSortBy(): Enum\SortBy
+    {
+        return $this->sortBy;
+    }
+
+    public function getQuantity(): string
+    {
+        return $this->quantity;
+    }
+
+    public function getSince(): ?DateTime
+    {
+        return $this->since;
+    }
+
     
-    public function news(): array
+    public function getNews(): array
     {
         return $this->news;
     }

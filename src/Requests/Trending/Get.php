@@ -36,6 +36,24 @@ class Get extends Requests\Request
         return Enum\RequestMethod::GET();
     }
 
+    public function setSafeSearch(Enum\SafeSearch $data): self
+    {
+        $this->safeSearch = $data;
+        return $this;
+    }
+
+    public function since(DateTime $data): self
+    {
+        $this->since = $data;
+        return $this;
+    }
+
+    public function sortBy(Enum\SortBy $data): self
+    {
+        $this->sortBy = $data;
+        return $this;
+    }
+
     public function getQuery(): array
     {
         return [
@@ -70,7 +88,27 @@ class Get extends Requests\Request
         return $this;
     }
 
-    public function trending(): array
+    public function getLanguage(): ?Enum\Language
+    {
+        return $this->language;
+    }
+
+    public function getSafeSearch(): Enum\SafeSearch
+    {
+        return $this->safeSearch;
+    }
+
+    public function getSortBy(): Enum\SortBy
+    {
+        return $this->sortBy;
+    }
+
+    public function getSince(): ?DateTime
+    {
+        return $this->since;
+    }
+
+    public function getTrending(): array
     {
         return $this->trending;
     }

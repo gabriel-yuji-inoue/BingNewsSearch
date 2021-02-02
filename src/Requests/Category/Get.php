@@ -89,7 +89,32 @@ class Get extends Requests\Request
         return $this;
     }
 
-    public function news(): array
+    public function getCategory(): Enum\IMarketCategory
+    {
+        return $this->category;
+    }
+
+    public function getLanguage(): ?Enum\Language
+    {
+        return $this->language;
+    }
+
+    public function getSafeSearch(): Enum\SafeSearch
+    {
+        return $this->safeSearch;
+    }
+
+    public function getSortBy(): Enum\SortBy
+    {
+        return $this->sortBy;
+    }
+
+    public function getSince(): ?DateTime
+    {
+        return $this->since;
+    }
+
+    public function getNews(): array
     {
         return $this->news;
     }
