@@ -3,7 +3,7 @@
 ___
 ## Dependencies ##
  - PHP7.4 >
- - GuzzleHttp 7.0.x
+ - GuzzleHttp 7.0.x >
 ___
 ## Instalation ##
 ```
