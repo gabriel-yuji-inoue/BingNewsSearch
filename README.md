@@ -1,6 +1,10 @@
 # BingNewsSearch API Library #
 ### See more of this API at: https://docs.microsoft.com/en-us/bing/search-apis/bing-news-search ###
 ___
+#### Dependencies ####
+ - PHP7.4 >
+ - GuzzleHttp 7.0.x >
+___
 
 ## Usage of Api bing NEWS microsoft an easy way ##
 
