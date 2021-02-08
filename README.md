@@ -34,7 +34,7 @@ $request = $client->category()
   ->get(Enum\Category::BUSINESS(), Enum\Language::PT_BR())
   ->setSafeSearch(Enum\SafeSearch::OFF())
   ->request();
-$news = $request->news();
+$news = $request->getNews();
 ```
 
 ### Search by key word ###
@@ -45,7 +45,7 @@ $news = $request->news();
     ->setQuantity(50)
     ->setSafeSearch(Enum\SafeSearch::STRICT())
     ->request();
-$news = $request->news();
+$news = $request->getNews();
 ```
 
 ### Search by trending topics ###
@@ -54,7 +54,7 @@ $news = $request->news();
  $request = $client->trending()
     ->get(Enum\Language::EN_US())
     ->request();
-$news = $request->trending();
+$news = $request->getTrending();
 ```
 
 __MORE__
