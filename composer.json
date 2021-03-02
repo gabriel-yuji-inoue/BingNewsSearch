@@ -1,6 +1,14 @@
 {
     "name": "bing-news-search/bing-news-search",
     "description": "PHP Library for bing news search API.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gabriel Yuji",
+            "email": "gabriel.yuji.dev@hotmail.com",
+            "homepage": "https://github.com/yujiisnotavailable"
+        }
+    ],
     "require": {
         "php": ">=7.4",
         "guzzlehttp/guzzle": "^7.0.1"
